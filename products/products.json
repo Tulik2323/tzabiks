@@ -1,7 +1,10 @@
 [
   {
     "id": "tk-comms-sentinel",
-    "name": { "he": "TK Comms Sentinel", "en": "TK Comms Sentinel" },
+    "name": {
+      "he": "TK Comms Sentinel",
+      "en": "TK Comms Sentinel"
+    },
     "tagline": {
       "he": "מנטר את כל הסוויצ'ים ברשת ושולח התראה לפני שמישהו מתלונן",
       "en": "Monitors every switch on your network and alerts you before users complain"
@@ -12,9 +15,638 @@
     },
     "category": "app",
     "status": "live",
-    "tags": ["SNMP", "Node.js", "React", "Windows Server"],
+    "tags": [
+      "SNMP",
+      "Node.js",
+      "React",
+      "Windows Server"
+    ],
     "image": "",
-    "url": "https://tulik2323.github.io/tk-comms-sentinel/",
-    "repo": ""
+    "url": "",
+    "repo": "",
+    "logo": "products/images/tk-comms-sentinel-logo.png",
+    "page": {
+      "eyebrow": {
+        "he": "ניטור רשת ותשתית תקשורת, בזמן אמת",
+        "en": "Network & comms infrastructure monitoring, live"
+      },
+      "headline": {
+        "he": "הצוות כבר יודע מה עומד ליפול, לפני שהמשתמשים ידווחו.",
+        "en": "The team already knows what's about to fail, before the users report it."
+      },
+      "emphasis": {
+        "he": "מה עומד ליפול",
+        "en": "what's about to fail"
+      },
+      "lede": {
+        "he": "TK COMMS SENTINEL נותנת לכל סוויץ', פורט וקישור ברשת שלכם סטטוס חי, עם מספיק היסטוריה כדי לדעת אם ה\"איטיות\" חדשה, ומספיק דיוק כדי לנקוב בפורט המדויק. היא נבנתה ונבחנה מול רשת בית חולים אמיתית, הסביבה הכי פחות סלחנית לכשל שיש.",
+        "en": "TK COMMS SENTINEL gives every switch, port, and link on your network a live status, with enough history to know if \"slow\" is new, and enough precision to name the exact port. It was built and proven against a real hospital network, about as unforgiving an environment as it gets."
+      },
+      "microcopy": {
+        "he": "WINDOWS SERVER · ללא IIS · פועל גם ללא אינטרנט",
+        "en": "WINDOWS SERVER · NO IIS REQUIRED · WORKS FULLY OFFLINE"
+      },
+      "preview": {
+        "label": "OPERATOR VIEW · LIVE",
+        "meta": "24H",
+        "rows": [
+          {
+            "state": "crit",
+            "name": "SW-ER-01 · Gi1/0/12",
+            "meta": {
+              "he": "92% ניצולת · 3 התראות",
+              "en": "92% utilization · 3 alerts"
+            },
+            "spark": [
+              40,
+              60,
+              85,
+              95,
+              70
+            ]
+          },
+          {
+            "state": "warn",
+            "name": "SW-ICU-02 · Gi2/0/4",
+            "meta": {
+              "he": "81% ניצולת · התראה אחת",
+              "en": "81% utilization · 1 alert"
+            },
+            "spark": [
+              30,
+              50,
+              75,
+              65,
+              80
+            ]
+          },
+          {
+            "state": "ok",
+            "name": "SW-LAB-03 · Gi1/0/30",
+            "meta": {
+              "he": "44% ניצולת",
+              "en": "44% utilization"
+            },
+            "spark": [
+              20,
+              35,
+              25,
+              40,
+              30
+            ]
+          },
+          {
+            "state": "warn",
+            "name": "SW-RAD-01 · Gi1/0/8",
+            "meta": {
+              "he": "76% · שגיאות פורט",
+              "en": "76% · port errors"
+            },
+            "spark": [
+              45,
+              55,
+              70,
+              60,
+              72
+            ]
+          }
+        ],
+        "note": {
+          "he": "להמחשה בלבד. שמות ונתונים בדיוניים.",
+          "en": "Illustrative only. Fictional names and figures."
+        }
+      },
+      "problem": {
+        "eyebrow": {
+          "he": "למה זה קריטי",
+          "en": "Why this matters"
+        },
+        "title": {
+          "he": "רשתות תשתית קריטיות הן לא IT רגיל",
+          "en": "Critical infrastructure networks are not ordinary IT"
+        },
+        "paragraphs": [
+          {
+            "he": "ברשת שאסור לה ליפול, כמו בית חולים, מוסד פיננסי או מתקן תעשייתי, יושבים עשרות סוויצ'ים ומאות פורטים. תקלה בפורט בודד לא תמיד \"מפילה\" משהו בבירור: לפעמים היא רק מאיטה, מגמגמת, או מנתקת מכשיר אחד בזמן שהרשת סביבו נראית תקינה.",
+            "en": "In a network that isn't allowed to go down, like a hospital, a financial institution or an industrial site, dozens of switches and hundreds of ports carry equipment that can't drop for a moment. A single failing port doesn't always announce itself clearly: sometimes it just slows down, stutters, or drops one device while the network around it looks perfectly healthy."
+          },
+          {
+            "he": "כלי ניטור IT כלליים בנויים לרשת משרדית אחידה, לא לפריסה פיזית של עשרות מחלקות עם ציוד מכמה יצרנים שנוסף עם השנים. TK COMMS SENTINEL נבנתה ונבחנה מול רשת בית חולים אמיתית, ומאז מתאימה לכל רשת ארגונית עם אותה רמת דרישה לאמינות.",
+            "en": "General-purpose IT monitoring tools are built for a uniform office network, not for the physical layout of dozens of departments with multi-vendor equipment added over the years. TK COMMS SENTINEL was built and proven against a real hospital network, and now fits any enterprise network with the same reliability bar."
+          }
+        ],
+        "points": [
+          {
+            "title": {
+              "he": "עומס פורט חורג",
+              "en": "Port overload"
+            },
+            "text": {
+              "he": "מזוהה ומדווח לפני שהאיטיות מורגשת בעמדה הקלינית.",
+              "en": "Caught and reported before the slowdown is felt at the clinical workstation."
+            }
+          },
+          {
+            "title": {
+              "he": "מתג שנופל",
+              "en": "A switch going down"
+            },
+            "text": {
+              "he": "התראה מיידית, עם הבחנה בין תקלת מכשיר לנפילת נתיב רחבה.",
+              "en": "Immediate alert, distinguishing a single device fault from a wider path outage."
+            }
+          },
+          {
+            "title": {
+              "he": "ציוד לא מזוהה",
+              "en": "Unidentified equipment"
+            },
+            "text": {
+              "he": "איתור לפי IP או MAC, עד לסוויץ' והפורט הפיזי המדויק.",
+              "en": "Located by IP or MAC, down to the exact switch and physical port."
+            }
+          }
+        ]
+      },
+      "features": {
+        "eyebrow": {
+          "he": "מה המערכת עושה בפועל",
+          "en": "What the system actually does"
+        },
+        "title": {
+          "he": "שלוש קבוצות יכולת",
+          "en": "Three groups of capability"
+        },
+        "intro": {
+          "he": "ראייה, אבחון ועמידות. כל אחת נותנת מענה לשלב אחר בחיים של תקלת רשת.",
+          "en": "Visibility, diagnosis, and resilience. Each answers a different stage in the life of a network fault."
+        },
+        "groups": [
+          {
+            "code": "VIS",
+            "name": {
+              "he": "ראייה",
+              "en": "Visibility"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "ניטור SNMP רב-יצרני",
+                  "en": "Multi-vendor SNMP monitoring"
+                },
+                "text": {
+                  "he": "Aruba, HPE Comware, Check Point ומתגי L2/L3 נוספים נסרקים במקביל, בלי צורך בהתקנת agent על אף מכשיר.",
+                  "en": "Aruba, HPE Comware, Check Point, and other L2/L3 switches are polled in parallel, with no agent required on any device."
+                }
+              },
+              {
+                "title": {
+                  "he": "לוח בקרה בזמן אמת",
+                  "en": "Real-time dashboard"
+                },
+                "text": {
+                  "he": "עומס רוחב פס, זמינות מכשירים, תקלות פעילות והפורטים הבעייתיים ביותר ב-24 השעות האחרונות, במבט אחד.",
+                  "en": "Bandwidth load, device availability, active faults, and the worst-performing ports over the last 24 hours, at a glance."
+                }
+              },
+              {
+                "title": {
+                  "he": "טופולוגיית LLDP אוטומטית",
+                  "en": "Automatic LLDP topology"
+                },
+                "text": {
+                  "he": "זיהוי קישורי uplink בין מתגים אוטומטית, כדי שהמערכת (ואתם) לא תבלבלו עמדת קצה עם ציוד תשתית.",
+                  "en": "Uplink connections between switches are detected automatically, so the system, and you, never mistake an end device for infrastructure."
+                }
+              }
+            ]
+          },
+          {
+            "code": "DIA",
+            "name": {
+              "he": "אבחון",
+              "en": "Diagnosis"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "היסטוריית תעבורה לכל פורט",
+                  "en": "Per-port traffic history"
+                },
+                "text": {
+                  "he": "גרף 48 שעות אחורה לכל ממשק בנפרד, תעבורה ושגיאות, לחקירת תקלה אחרי שהיא כבר קרתה.",
+                  "en": "A 48-hour graph for every interface individually, throughput and errors, for investigating a fault after it already happened."
+                }
+              },
+              {
+                "title": {
+                  "he": "איתור לפי IP או MAC",
+                  "en": "Find by IP or MAC"
+                },
+                "text": {
+                  "he": "הזינו כתובת, והמערכת מאתרת באיזה סוויץ' ובאיזה פורט פיזי מחובר הציוד, גם כשהחיפוש עובר דרך ניתוב L3.",
+                  "en": "Enter an address and the system locates which switch and which physical port the device is connected to, even when the lookup crosses L3 routing."
+                }
+              },
+              {
+                "title": {
+                  "he": "התראות ממוקדות במייל ובטלגרם",
+                  "en": "Targeted email and Telegram alerts"
+                },
+                "text": {
+                  "he": "קישור ישיר למכשיר ולפורט הספציפי בהתראה. לא \"יש בעיה איפשהו ברשת\", אלא איפה בדיוק.",
+                  "en": "A direct link to the specific device and port in the alert. Not \"something's wrong somewhere on the network\", but exactly where."
+                }
+              }
+            ]
+          },
+          {
+            "code": "SEC",
+            "name": {
+              "he": "עמידות ואבטחה",
+              "en": "Resilience & security"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "התחברות ארגונית מאובטחת",
+                  "en": "Enterprise-grade sign-in"
+                },
+                "text": {
+                  "he": "Active Directory דרך LDAPS, אימות דו-שלבי (2FA), וחשבון חירום מקומי נפרד לשעת משבר.",
+                  "en": "Active Directory over LDAPS, two-factor authentication, and a separate local emergency account for outages."
+                }
+              },
+              {
+                "title": {
+                  "he": "פועלת במלואה ללא אינטרנט",
+                  "en": "Runs fully offline"
+                },
+                "text": {
+                  "he": "מתאימה לרשת מבודדת (air-gapped). אין תלות בשירות ענן חיצוני לצורך פעולה שוטפת.",
+                  "en": "Suited to an air-gapped network. No dependency on any external cloud service for day-to-day operation."
+                }
+              },
+              {
+                "title": {
+                  "he": "יומן ביקורת מלא",
+                  "en": "Complete audit log"
+                },
+                "text": {
+                  "he": "כל שינוי הרשאה, כניסה למערכת ושינוי סף התראה נרשם באופן קבוע ומתועד.",
+                  "en": "Every permission change, login, and alert-threshold change is recorded permanently."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": {
+          "he": "כך זה עובד",
+          "en": "How it works"
+        },
+        "title": {
+          "he": "ממחזור סריקה עד התראה בתיבת המייל",
+          "en": "From polling cycle to inbox alert"
+        },
+        "items": [
+          {
+            "title": {
+              "he": "סריקה מתמדת",
+              "en": "Continuous polling"
+            },
+            "text": {
+              "he": "כל מכשיר נבדק במחזור קבוע, בין 30 שניות לכמה דקות, דרך SNMP וללא agent מקומי.",
+              "en": "Every device is checked on a set cycle, from 30 seconds to a few minutes, over SNMP with no local agent."
+            }
+          },
+          {
+            "title": {
+              "he": "זיהוי חריגה",
+              "en": "Anomaly detection"
+            },
+            "text": {
+              "he": "עומס, שגיאות פורט או ניתוק מושווים לסף שהוגדר: ברמת מכשיר, פורט בודד, או גלובלית.",
+              "en": "Load, port errors, or disconnects are compared against configured thresholds: per device, per port, or network-wide."
+            }
+          },
+          {
+            "title": {
+              "he": "התראה ופעולה",
+              "en": "Alert & action"
+            },
+            "text": {
+              "he": "מייל או הודעת טלגרם עם קישור ישיר לפורט הבעייתי יוצאים לצוות, לפני שהתקלה מורגשת.",
+              "en": "An email or Telegram message with a direct link to the problem port goes out to the team, before the fault is felt."
+            }
+          }
+        ]
+      },
+      "stats": {
+        "eyebrow": {
+          "he": "מוכנות לרשת שאסור לה להיות תלויה בגורם חיצוני",
+          "en": "Ready for a network that can't depend on anything external"
+        },
+        "title": {
+          "he": "בנויה לעמוד בדרישה, לא רק להיראות טוב",
+          "en": "Built to meet the requirement, not just to look good"
+        },
+        "items": [
+          {
+            "value": "0",
+            "label": {
+              "he": "תלות בשירותי ענן חיצוניים לפעולה שוטפת",
+              "en": "External cloud dependencies for day-to-day operation"
+            }
+          },
+          {
+            "value": "24/7",
+            "label": {
+              "he": "סריקה רציפה, ללא צורך בהתערבות ידנית",
+              "en": "Continuous polling, no manual intervention needed"
+            }
+          },
+          {
+            "value": "3+",
+            "label": {
+              "he": "יצרנים נתמכים: Aruba · HPE Comware · Check Point",
+              "en": "Vendors supported: Aruba · HPE Comware · Check Point"
+            }
+          }
+        ]
+      },
+      "download": {
+        "eyebrow": {
+          "he": "הורדה והתקנה",
+          "en": "Download & install"
+        },
+        "title": {
+          "he": "מתקין עצמאי ל-Windows Server",
+          "en": "Standalone installer for Windows Server"
+        },
+        "intro": {
+          "he": "קובץ EXE אחד. Node.js, שני שירותי Windows ותעודת TLS נוצרים אוטומטית באשף ההתקנה.",
+          "en": "A single EXE. Node.js, two Windows services, and a TLS certificate are created automatically by the setup wizard."
+        },
+        "version": "1.6.1",
+        "platforms": "Windows Server 2019 · 2022 · 2025 · x64",
+        "url": "https://github.com/Tulik2323/tk-comms-sentinel/releases/latest/download/TKCommsSentinel-Setup-latest.exe",
+        "sha256": "daaa04261ff884828cd60abe90d922d4e346222efbb94b9dda16a97064f79de4"
+      },
+      "changelog": [
+        {
+          "version": "1.6.1",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקון להתראות טלגרם: כפתורי הבדיקה (\"שלח הודעת בדיקה\" ו\"מצא Chat ID\") שומרים עכשיו את ההגדרות שעל המסך לפני שהם רצים, וסיבת הכשלון מוצגת במקום שגיאה כללית.",
+            "en": "Telegram alerts fix: the test buttons (\"Send test message\" and \"Find Chat ID\") now save the settings on screen before running, and the reason for a failure is shown instead of a generic error."
+          }
+        },
+        {
+          "version": "1.6.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "התראות לטלגרם בנוסף למייל: בהגדרות בוחרים אילו סוגי התראות יעלו לטלגרם (נפילת מכשיר, חזרה, נפילת נתיב, עומס תעבורה, CPU, זיכרון ופורט עמוס), ואפשר להגדיר השהיה להתראות פורט כך שפורט שמתמלא לרגע וחוזר לא יגיע לטלפון. המייל ממשיך לקבל הכול, ויש כפתור למציאת Chat ID ולשליחת הודעת בדיקה. בנוסף, צבע הטמפרטורה נקבע לפי הספים שהסוויץ׳ עצמו מדווח (במקום 45 ו-60 קבועים), כך שסוויצ׳ים תקינים עם חיישני שבב חמים כבר לא מוצגים כחמים.",
+            "en": "Telegram alerts alongside email: in Settings you choose which kinds of alerts go to Telegram (device down, recovery, path outage, traffic load, CPU, memory and overloaded port), with a delay for port alerts so a port that fills up for a moment and clears never reaches your phone. Email keeps receiving everything, and there are buttons to find the Chat ID and to send a test message. Temperature colours now follow the limits the switch itself reports (instead of a fixed 45 and 60), so healthy switches with hot chip sensors are no longer shown as hot."
+          }
+        },
+        {
+          "version": "1.5.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "שלושה חלונות חדשים ב-Dashboard. היסטוריית נפילות: מתי כל מכשיר נפל, מתי חזר וכמה זמן היה למטה (24 שעות, 7 או 30 ימים); נפילה שבה כל המכשירים נופלים יחד מוצגת כאירוע אחד של נפילת נתיב. יומן Uptime לכל מכשיר: כמה זמן הוא פועל, מתי אותחל, זמינות ל-7 ול-30 ימים, ולחיצה על שורה פותחת את יומן האתחולים והנפילות שלו. והסוויצ׳ים הכי חמים לפי הטמפרטורה שלהם. בנוסף תוקנה קריאת הטמפרטורה: היא עבדה ל-37 מתוך 99 מכשירים ועכשיו ל-91 (Aruba CX מדווח במילי-מעלות ו-HPE 5130 נקרא מעמודה שגויה), והחלונות שנפתחים באנגלית כבר לא מוצגים מימין לשמאל. ההיסטוריה נרשמת מיום ההתקנה.",
+            "en": "Three new Dashboard windows. Outage history: when each device went down, when it came back and how long it was down (24 hours, 7 or 30 days); an outage in which every device drops together is shown as a single path-outage event. An uptime log for every device: how long it has been running, when it booted, 7- and 30-day availability, and a click on a row opens its log of reboots and outages. And the hottest switches by temperature. Temperature reading is also fixed: it worked for 37 of 99 devices and now works for 91 (Aruba CX reports in thousandths of a degree and HPE 5130 was read from the wrong column), and dialogs opened in English are no longer laid out right to left. History is recorded from the day of installation."
+          }
+        },
+        {
+          "version": "1.4.4",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הקשחת אבטחה, חלק שני: כניסה, התחברויות ו-Audit. יציאה מהמערכת, מחיקת משתמש, שינוי סיסמה או תפקיד ואיפוס 2FA מבטלים עכשיו התחברויות פתוחות, והתפקיד נקרא מהמסד בכל בקשה. ניסיונות כניסה כושלים נספרים לפי משתמש וכתובת, לקוד 2FA יש מגבלה משלו ואי אפשר להשתמש באותו קוד פעמיים, וכתובת הלקוח נרשמת ב-Audit, שכולל עכשיו גם את הפעולות שלא נרשמו (משתמשים, מכשירים, ספי התראה, תזמון דוחות, מפה ורישיון). החלפת 2FA דורשת את הקוד הנוכחי, קבוצות AD נבדקות בהתאמה מדויקת, ולסיסמאות מקומיות יש מדיניות (12 תווים לפחות, גם באשף ההתקנה). תעודת ה-TLS של שרת הדואר מאומתת (ניתן לשליטה בהגדרות), דוח הזמינות (Uptime) שלא עבד תוקן, וספריות עם פגיעויות ידועות עודכנו.",
+            "en": "Security hardening, part two: sign-in, sessions and the audit log. Logging out, deleting a user, changing a password or role, and resetting 2FA now end open sessions, and the role is read from the database on every request. Failed sign-ins are counted per user and per address, 2FA codes have their own limit and cannot be reused, and the client address is written to the audit log, which now also records the actions that were missing (users, devices, alert thresholds, report schedules, map and license). Replacing 2FA needs the current code, AD groups are matched exactly, and local passwords follow a policy (12+ characters, also in the installer wizard). The mail server's TLS certificate is now verified (configurable in Settings), the Uptime report, which never worked, is fixed, and libraries with known vulnerabilities are updated."
+          }
+        },
+        {
+          "version": "1.4.3",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הקשחת אבטחה לפי סקירת OWASP Top 10: קוד המקור של השרת כבר לא ניתן להורדה בלי התחברות. מחרוזות ה-SNMP ופרטי SNMPv3 לא מוצגים יותר לאף משתמש ב-API ובייצוא CSV, ועריכת מכשיר לא נוגעת בהם אלא אם הוקלד ערך חדש. מנגנון העדכון מתקין רק עדכון חתום על ידי היצרן. נוספו כותרות אבטחה, בדיקות קלט לסריקה, לייבוא ולהעלאת המפה, ונטרול נוסחאות Excel בקבצי CSV. מסך ה-Audit נגיש למנהלים בלבד, וניקוי הלוג נרשם בו. בנוסף נוסף סקריפט הקשחה להרשאות הקבצים בשרת.",
+            "en": "Security hardening from an OWASP Top 10 review: the server's source code can no longer be downloaded without logging in. SNMP community strings and SNMPv3 credentials are no longer returned to any user by the API or the CSV export, and editing a device leaves them untouched unless a new value is typed. The update installer only installs an update signed by the vendor. Added security headers, input checks for scans, imports and map uploads, and neutralised Excel formulas in CSV files. The Audit page is for administrators only, and clearing the log is itself logged. Also added a server-hardening script for the file permissions."
+          }
+        },
+        {
+          "version": "1.4.2",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "סגירת התראות: במסך ההתראות אפשר לסמן כמה התראות (Shift + לחיצה מסמן טווח שורות) ולסגור אותן, או לסגור את כל הפתוחות בבת אחת, וכל סגירה נרשמת ב-Audit. התראות תעבורה, CPU וזיכרון נסגרות מעצמן כשהערך חוזר מתחת לסף, והתראות של מכשיר שנמחק נסגרות 14 יום אחרי מחיקתו. התראה שחוזרת על עצמה לאורך שבוע מופיעה בחלונית \"דורשות בדיקה\" בראש המסך, וכרטיס \"התראות פתוחות\" בדשבורד מציג עכשיו את המספר האמיתי ולא רק מתוך 10 ההתראות האחרונות.",
+            "en": "Closing alerts: on the Alerts page you can tick several alerts (Shift+click selects a range of rows) and close them, or close every open alert at once, and each closure is written to the audit log. Traffic, CPU and memory alerts close by themselves when the value drops back under the threshold, and alerts of a deleted device close 14 days after it was deleted. An alert that keeps coming back over the week is listed in a \"Needs review\" panel at the top of the page, and the Dashboard's Open Alerts card now shows the real total instead of counting only the 10 latest alerts."
+          }
+        },
+        {
+          "version": "1.4.1",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "משך זמן לכל סף התראה: בחלון הגדרת הסף נוסף שדה \"חייב להישאר מעל הסף לפחות (דקות)\", כך שאפשר להגדיר, למשל, שסוויצ' מסוים יתריע רק אחרי 10 דקות ברצף מעל הסף. ברירת המחדל היא 5 דקות, כמו עד עכשיו. בטבלת הספים נוספו עמודת משך וכפתור עריכה. בנוסף תוקנה שמירת סף התראה לפורט בודד, שנכשלה בשקט: עכשיו אפשר להגדיר סף לכמה פורטים על אותו מכשיר, ולכל אחד גם משך משלו.",
+            "en": "A duration for every alert threshold: the threshold window has a new \"Must stay above the threshold for (minutes)\" field, so a specific switch can be set to alert only after it has stayed above the threshold for, say, 10 minutes. The default is 5 minutes, as before. The thresholds table gains a Duration column and an Edit button. Also fixed: saving an alert threshold for a single port failed silently; several ports on one device can now each have their own threshold, with its own duration."
+          }
+        },
+        {
+          "version": "1.4.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "מספר הסוויצ'ים הפיזיים בדשבורד: כרטיס חדש ליד \"סה\"כ מכשירים\" מציג כמה סוויצ'ים אמיתיים יש ברשת, ולא רק כמה כתובות IP מנוטרות. כתובת אחת היא לעיתים מחסנית של 2 עד 10 סוויצ'ים, והמספר נקרא מהציוד עצמו (ENTITY-MIB) ומתעדכן פעם בשעה. בנוסף, סוויצ'ים של HPE שסווגו בדף המלאי כ\"מחשבים\" מסווגים עכשיו כתשתית רשת: מכשיר שכתובת ה-IP שלו מנוטרת במערכת הוא תשתית רשת.",
+            "en": "Physical switch count on the Dashboard: a new card next to \"Total Devices\" shows how many real switches are on the network, not just how many IP addresses are monitored. One address is often a stack of 2 to 10 switches; the number is read from the equipment itself (ENTITY-MIB) and refreshed hourly. Also, HPE switches that Inventory classified as \"Computers\" are now classified as network infrastructure: a device whose IP address is monitored by the system is infrastructure."
+          }
+        },
+        {
+          "version": "1.3.12",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "קטגוריות מותאמות אישית בדף המלאי: מנהל יכול ליצור קטגוריה משלו (למשל \"רנטגן וקרדיולוגיה\") ישירות מתיבת הבחירה של ה-VLAN, לבחור לה אייקון, ולערוך או למחוק אותה. לקטגוריה החדשה יש כרטיס סיכום משלה, והיא פועלת בסינון ובטבלה כמו קטגוריה מובנית. בנוסף נוספה לכל VLAN תיבת סימון \"גם מזוהים\", שגורמת לקטגוריה של ה-VLAN לחול על כל המכשירים בו ולא רק על כאלה שלא זוהו.",
+            "en": "Custom categories in Inventory: an admin can create a category of their own (e.g. \"Radiology & Cardiology\") straight from a VLAN's dropdown, pick an icon, and rename or delete it later. The new category gets its own summary card and works in the filter and the table like a built-in one. Each VLAN also gains an \"Incl. identified\" checkbox that makes the VLAN's category apply to every device on it, not only the ones that were still unknown."
+          }
+        },
+        {
+          "version": "1.3.11",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "נוסף כלי קריאה בלבד לבדיקת מבנה מסד הנתונים (check-schema.js): מציג את רשימת הטבלאות, ולכל טבלה את העמודות ומספר השורות. הכלי מאתר את מסד הנתונים כמו השרת עצמו, ולכן עובד גם בהתקנה רגילה וגם בהתקנת IIS.",
+            "en": "Added a read-only database schema tool (check-schema.js) that lists the tables and shows each table's columns and row count. It finds the database the same way the server does, so it works on both standard and IIS installs."
+          }
+        },
+        {
+          "version": "1.3.10",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "שמות VLAN בדף המלאי: לשונית VLANים חדשה מציגה כל VLAN שהמערכת מזהה ברשת, ישירות מהציוד (טבלאות ARP וה-VLAN של הפורטים במתגים), עם מספר המכשירים, כמה מהם לא מזוהים, ובכמה פורטים ומתגים הוא מופיע. מנהל יכול לתת לכל VLAN שם (למשל 220 = מצלמות) ולבחור לו קטגוריה, ואז מכשירים לא מזוהים ב-VLAN הזה מסווגים לפיה. בטבלת המכשירים נוספו עמודת VLAN וסינון לפי VLAN. בנוסף, דוח האבחון מציג גם את ה-Scheduled Task של ה-poller בהתקנות IIS.",
+            "en": "VLAN names in Inventory: a new VLANs tab lists every VLAN the system detects on the network, read directly from the equipment (ARP tables and switch port VLANs), with its device count, how many of those are still unknown, and how many ports and switches carry it. An admin can name each VLAN (e.g. 220 = Cameras) and give it a category, and unknown devices on that VLAN are then classified with it. The device table gains a VLAN column and a VLAN filter. The diagnostics report also shows the poller's Scheduled Task on IIS installs."
+          }
+        },
+        {
+          "version": "1.3.9",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקונים לדף המלאי: הדף הציג \"Error\" ולא נטען כלל בגלל שם עמודה שגוי בשאילתה, והשאילתה נתקעה על 970 אלף רשומות. בנוסף חסרו מהדף כל הרשומות שנלמדו מטבלת ARP (5,266 רשומות, כולל כל רשתות ה-AP) — ולכן חיפוש של כתובת בתת-רשת כזו לא החזיר כלום. כתובות IP חסרות משוחזרות עכשיו בהצלבה לפי MAC (כיסוי 64%→94%), נקודות גישה של Aruba סווגו כמחשבים ותוקנו (0→571), והוסף פענוח שמות אוטומטי (Reverse DNS) וחיפוש גם בתיאורי הפורטים.",
+            "en": "Inventory fixes: the page showed only \"Error\" and never loaded because of a wrong column name in the query, and the query itself timed out against 970K records. Every ARP-learned endpoint was also missing from the page — 5,266 records including all of the wireless subnets — which is why searching an address in one of those subnets returned nothing. Missing IP addresses are now recovered by cross-referencing MAC addresses (coverage 64%→94%), Aruba access points that were being counted as computers are classified correctly (0→571), and reverse-DNS name resolution plus search over switch port descriptions were added."
+          }
+        },
+        {
+          "version": "1.3.8",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הוספת דף מלאי תחנות קצה (Inventory) — מסווג את כל ה-MAC הפעילים לפי יצרן (OUI) לקטגוריות: מחשבים, מדפסות, AP/WiFi, מצלמות, ציוד רפואי, תשתית רשת, VMs ולא ידוע. כולל כרטיסי סיכום, טבלה עם חיפוש ופילטר, ועימוד.",
+            "en": "Added an Endpoint Inventory page — classifies all active MACs by OUI (vendor) into categories: Computers, Printers, APs/WiFi, Cameras, Medical Devices, Network Infrastructure, VMs, and Unknown. Includes summary cards, a searchable/filterable paginated table, and Hebrew + English UI."
+          }
+        },
+        {
+          "version": "1.3.7",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הוספת כלי \"Collect Diagnostics\" (קיצור בתפריט התחל) שאוסף דוח בטוח לשליחה — גרסה, סטטוס שירותים, לוגים אחרונים, מבנה וספירות מסד נתונים בלבד (אף פעם לא תוכן שורות), ושמות מפתחות .env בלבד — לצורך אבחון מרחוק. תיקון נוסף לפער בתהליך הפריסה שבו תיקיית הסקריפטים של המתקין עצמו יכלה להישאר לא מעודכנת בשקט.",
+            "en": "Added a \"Collect Diagnostics\" tool (Start Menu shortcut) that gathers a safe-to-share report — version, service status, recent logs, database schema/counts only (never row data), and .env key names only — for remote troubleshooting. Also fixed a second deploy pipeline gap where the installer's own scripts folder could silently go stale."
+          }
+        },
+        {
+          "version": "1.3.6",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקון פער בתהליך הפריסה שחסם בשקט כל שינוי קוד תחת backend/db מלהגיע לשרת החי מאז 1.3.4 — זו הסיבה שה-Audit והחיפוש הראשי הפסיקו לעבוד. תיקון נוסף: IP/שם מחשב שלא הופיעו בחלק מהפורטים, התראות שווא על כשל מאווררים במתגי HPE 5130, והוספת עמודת VLAN לטבלת הפורטים.",
+            "en": "Fixed a deploy pipeline gap that had silently blocked every backend/db code change from reaching the live server since v1.3.4 — this is why the audit log and main search stopped working. Also fixed endpoint IP/hostname not showing on some ports, false \"fan failed\" hardware alarms on HPE 5130 switches, and added a VLAN column to the ports table."
+          }
+        },
+        {
+          "version": "1.3.5",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הוספת זיהוי שם מחשב (reverse DNS) לתחנות קצה — כל כתובת IP שמוצגת עבור מכשיר מחובר תציג כעת גם את שם המחשב, כאשר קיים ב-DNS, בטבלת תחנות הקצה של הפורט ובשני מסכי החיפוש.",
+            "en": "Added hostname resolution (reverse DNS) for endpoints — every IP shown for a connected device now also shows its computer name, when available via DNS, in the port endpoints table and both search views."
+          }
+        },
+        {
+          "version": "1.3.4",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקון דף ה-Audit שהמשיך להציג עברית במצב אנגלית — הודעות הלוג נבנות כעת מחדש בשפה הנבחרת במקום להציג טקסט עברי קפוא שנשמר במסד הנתונים. תיקון קישור ההורדה \"latest\" באתר שהצביע לקובץ שמעולם לא הועלה בפועל.",
+            "en": "Fixed the Audit page still showing Hebrew in English mode — log messages are now rebuilt in the active language instead of showing raw Hebrew text stored in the database. Fixed the website's \"latest\" download link, which was pointing at a file that was never actually uploaded."
+          }
+        },
+        {
+          "version": "1.3.3",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תרגום מלא לאנגלית בכל דפי המערכת — לוח בקרה, מכשירים, התראות, מגמות, Audit, טופולוגיה, מפה, כלים, דוחות, ניהול, רישוי וכניסה — לא רק הסרגל הצדדי. הודעות התראה נבנות כעת מחדש בשפה הנבחרת במקום להציג טקסט עברי קפוא שנשמר במסד הנתונים.",
+            "en": "Full English translation coverage — every page (Dashboard, Devices, Alerts, Trends, Audit, Topology, Map, Tools, Reports, Admin, License, Login) is now fully translated, not just the sidebar. Alert messages are now rebuilt in the active language instead of showing Hebrew text stored in the database."
+          }
+        },
+        {
+          "version": "1.3.2",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקון מלא של מיתוג כיוון עברית/אנגלית — החלפה לאנגלית מזיזה את הסרגל לשמאל וכל הממשק הופך ל-LTR. תיקון מיקום מספר הגרסה כך שיופיע בתחתית הסרגל ולא יסתיר כפתורים.",
+            "en": "Full RTL/LTR layout switch — switching to English moves the sidebar to the left and flips the entire UI to LTR. Fixed version chip to appear inside the sidebar instead of floating over buttons."
+          }
+        },
+        {
+          "version": "1.3.1",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תיקון הפוללר — Scheduled Task לא רץ מאז 13.8, הגדרת Repetition Interval לאתחול אוטומטי. תרגום מלא לכל רכיבי הממשק כולל 4 באנרי רישוי. תיקון סרגל צד קבוע שלא גולל עם התוכן.",
+            "en": "Fixed SNMP poller not running since Aug 13 (no Repetition Interval on Scheduled Task) — traffic charts and alerts now update again. Full UI translation coverage including all 4 license banners. Fixed sidebar scrolling with page content."
+          }
+        },
+        {
+          "version": "1.3.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "דף Watchdog עצמאי בתפריט הראשי — ניטור שינויי פורטים בזמן אמת עם התראה וצליל. תיקון מיתוג שפה עברית/אנגלית בתפריט הניווט.",
+            "en": "Standalone Port Watchdog page in the main menu — real-time port change monitoring with beep and browser notification. Fixed Hebrew/English language toggle in the sidebar."
+          }
+        },
+        {
+          "version": "1.2.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "תקופת ניסיון של 7 ימים בהתקנה ראשונה. אחרי 7 ימים ללא רישוי — חסימת גישה מלאה (HTTP 402). כותרת מידע מוצגת לאורך הניסיון עם ספירה לאחור לפקיעה."
+          }
+        },
+        {
+          "version": "1.0.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "גרסה ראשונה — מתקין EXE עצמאי ל-Windows Server, ניטור SNMP, לוח בקרה בזמן אמת, התראות מייל, טופולוגיית LLDP, איתור לפי IP/MAC, היסטוריית תעבורה, ומערכת רישוי מובנית."
+          }
+        }
+      ]
+    }
   }
 ]

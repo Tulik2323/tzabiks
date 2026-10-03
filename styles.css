@@ -191,6 +191,10 @@ h1 {
 .card-links a:hover { text-decoration: underline; }
 .empty { color: var(--muted); }
 
+.card-media { text-decoration: none; }
+.card-title { text-decoration: none; }
+.card-title:hover { color: var(--teal); }
+
 .about p { max-width: 42em; color: var(--muted); font-size: 18px; margin: 0; }
 
 .form { display: grid; gap: 8px; max-width: 560px; }

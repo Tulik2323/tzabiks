@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TULIK</title>
+<link rel="icon" type="image/png" href="/assets/tk-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Orbitron:wght@700;900&family=Frank+Ruhl+Libre:wght@500;700&family=Newsreader:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/product.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/" aria-label="TULIK">
+    <img src="/assets/tk-logo.png" alt="" width="36" height="36">
+    <span>TULIK</span>
+  </a>
+  <nav class="nav">
+    <a href="/#products" data-i18n="nav.products">מוצרים</a>
+    <a href="/#about" data-i18n="nav.about">אודות</a>
+    <a href="/#contact" data-i18n="nav.contact">צור קשר</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Switch language">EN</button>
+</header>
+
+<main id="product" aria-live="polite"></main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> TULIK</span>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
