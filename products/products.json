@@ -648,5 +648,479 @@
         }
       ]
     }
+  },
+  {
+    "id": "tzabiks",
+    "name": {
+      "he": "TZABIKS",
+      "en": "TZABIKS"
+    },
+    "tagline": {
+      "he": "רואים מה עומד ליפול בשרתים, בלי להתקין סוכנים",
+      "en": "See what is about to fail on your servers, with no agents"
+    },
+    "description": {
+      "he": "כשיש מאות שרתים ומכונות וירטואליות, קשה לדעת איזו מהן מתחילה להיות בעיה. TZABIKS מגלה אותן לבד, בודקת CPU, זיכרון, דיסק ושירותים בלי להתקין כלום עליהן, ושולחת התראה במייל או בטלגרם. הכול רץ אצלך בארגון, והנתונים נשארים אצלך.",
+      "en": "With hundreds of servers and virtual machines, it is hard to tell which one is turning into a problem. TZABIKS finds them on its own, checks CPU, memory, disk and services without installing anything on them, and sends an alert by email or Telegram. It all runs inside your organization, and the data stays with you."
+    },
+    "category": "app",
+    "status": "live",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "Docker"
+    ],
+    "image": "",
+    "logo": "",
+    "url": "",
+    "repo": "",
+    "page": {
+      "eyebrow": {
+        "he": "ניטור שרתים ומכונות וירטואליות",
+        "en": "Server and VM monitoring"
+      },
+      "headline": {
+        "he": "הצוות כבר יודע מה עומד ליפול, לפני שהמשתמשים מדווחים.",
+        "en": "Your team already knows what is about to fail, before users report it."
+      },
+      "emphasis": {
+        "he": "לפני שהמשתמשים מדווחים",
+        "en": "before users report it"
+      },
+      "lede": {
+        "he": "TZABIKS מתחברת לסביבה שלך, מגלה את המכונות ובודקת אותן בלי סוכנים. מה שדורש תשומת לב מופיע במסך אחד ומגיע אליך כהתראה. היא נשארת בתוך הארגון ועובדת גם בלי אינטרנט.",
+        "en": "TZABIKS connects to your environment, discovers the machines and checks them without agents. Whatever needs attention shows on one screen and reaches you as an alert. It stays inside your organization and works without internet access."
+      },
+      "microcopy": {
+        "he": "AGENTLESS · ON-PREMISES · WORKS FULLY OFFLINE",
+        "en": "AGENTLESS · ON-PREMISES · WORKS FULLY OFFLINE"
+      },
+      "preview": {
+        "label": "DASHBOARD · LIVE",
+        "meta": "24H",
+        "rows": [
+          {
+            "state": "ok",
+            "name": "srv-app-01",
+            "meta": {
+              "he": "CPU 34% · זיכרון 52%",
+              "en": "CPU 34% · memory 52%"
+            },
+            "spark": [
+              30,
+              35,
+              32,
+              38,
+              34
+            ]
+          },
+          {
+            "state": "warn",
+            "name": "srv-files-02",
+            "meta": {
+              "he": "דיסק C: 88%",
+              "en": "Disk C: 88%"
+            },
+            "spark": [
+              70,
+              74,
+              80,
+              85,
+              88
+            ]
+          },
+          {
+            "state": "crit",
+            "name": "srv-db-03",
+            "meta": {
+              "he": "דיסק D: 93% · התראה פתוחה",
+              "en": "Disk D: 93% · alert open"
+            },
+            "spark": [
+              78,
+              83,
+              88,
+              91,
+              93
+            ]
+          },
+          {
+            "state": "ok",
+            "name": "vm-web-04",
+            "meta": {
+              "he": "כל השירותים פועלים",
+              "en": "All services running"
+            },
+            "spark": [
+              20,
+              22,
+              21,
+              24,
+              23
+            ]
+          }
+        ],
+        "note": {
+          "he": "להמחשה בלבד. שמות ונתונים בדיוניים.",
+          "en": "Illustrative only. Fictional names and figures."
+        }
+      },
+      "problem": {
+        "eyebrow": {
+          "he": "למה זה קריטי",
+          "en": "Why this matters"
+        },
+        "title": {
+          "he": "הבעיה מתגלה כשכבר מאוחר",
+          "en": "You find out when it is already too late"
+        },
+        "paragraphs": [
+          {
+            "he": "בארגון עם הרבה שרתים, דיסק שמתמלא או שירות שנעצר לא נראים עד שמישהו מתקשר. ניטור שדורש התקנת סוכן על כל מכונה נתקע בדרך כלל באישורים ובתחזוקה, ומכונות נשארות בחוץ.",
+            "en": "In an organization with many servers, a filling disk or a stopped service goes unnoticed until someone calls. Monitoring that needs an agent on every machine usually gets stuck on approvals and upkeep, and machines are left out."
+          }
+        ],
+        "points": [
+          {
+            "title": {
+              "he": "דיסק שמתמלא",
+              "en": "A disk filling up"
+            },
+            "text": {
+              "he": "מקבלים התראה כשהדיסק מגיע לסף, וגם רואים את המגמה בגרף לפי שעה, יום או שבוע.",
+              "en": "You get an alert when a disk reaches its limit, and you can see the trend in a graph by hour, day or week."
+            }
+          },
+          {
+            "title": {
+              "he": "מכונה שלא עונה",
+              "en": "A machine that does not answer"
+            },
+            "text": {
+              "he": "המערכת מסמנת מכונה שאי אפשר לאסוף ממנה נתונים, ומפרידה בין מכונה שנפלה לבין בעיה בהרשאות.",
+              "en": "The system flags a machine it cannot collect from, and tells a machine that is down from a permissions problem."
+            }
+          },
+          {
+            "title": {
+              "he": "בעיה שחוזרת שוב ושוב",
+              "en": "A problem that keeps coming back"
+            },
+            "text": {
+              "he": "היסטוריית ההתראות מראה אילו בעיות חוזרות ובאילו מכונות, כדי שלא תגלה אותן רק בסופשבוע.",
+              "en": "The alert history shows which problems keep coming back and on which machines, so you do not find out only over the weekend."
+            }
+          }
+        ]
+      },
+      "features": {
+        "eyebrow": {
+          "he": "מה המערכת עושה בפועל",
+          "en": "What it actually does"
+        },
+        "title": {
+          "he": "מגילוי המכונות ועד ההתראה",
+          "en": "From finding machines to the alert"
+        },
+        "intro": {
+          "he": "הכול מגיע מהסביבה הקיימת שלך, בלי להתקין דבר על המכונות המנוטרות.",
+          "en": "Everything comes from your existing environment, with nothing installed on the monitored machines."
+        },
+        "groups": [
+          {
+            "code": "DIS",
+            "name": {
+              "he": "גילוי",
+              "en": "Discovery"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "מקורות מגוונים",
+                  "en": "Several sources"
+                },
+                "text": {
+                  "he": "מגלה מכונות מ-vCenter, מ-Hyper-V ומ-Active Directory, ומציגה אותן ברשימה אחת.",
+                  "en": "Finds machines from vCenter, Hyper-V and Active Directory, and lists them in one place."
+                }
+              },
+              {
+                "title": {
+                  "he": "אתה מחליט מה מנוטר",
+                  "en": "You decide what is monitored"
+                },
+                "text": {
+                  "he": "כל ממצא מסומן לניטור או להתעלמות, ומכונה מושתקת לא מופיעה בספירות ובסיכומים.",
+                  "en": "Each finding is marked monitor or ignore, and an ignored machine stays out of the counts and summaries."
+                }
+              },
+              {
+                "title": {
+                  "he": "חיפוש לפי שם או כתובת",
+                  "en": "Search by name or address"
+                },
+                "text": {
+                  "he": "מוצאים מכונה לפי שם או לפי כתובת IP.",
+                  "en": "Find a machine by name or by IP address."
+                }
+              }
+            ]
+          },
+          {
+            "code": "MON",
+            "name": {
+              "he": "ניטור",
+              "en": "Monitoring"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "בלי סוכנים",
+                  "en": "No agents"
+                },
+                "text": {
+                  "he": "אוסף CPU, זיכרון, דיסקים ושירותים ממכונות Windows ו-Linux דרך WinRM או SSH.",
+                  "en": "Collects CPU, memory, disks and services from Windows and Linux machines over WinRM or SSH."
+                }
+              },
+              {
+                "title": {
+                  "he": "בדיקת חיבור צעד אחר צעד",
+                  "en": "Step-by-step connection test"
+                },
+                "text": {
+                  "he": "בדף המכונה אפשר לבדוק איפה החיבור נעצר ולמה.",
+                  "en": "On a machine's page you can see where the connection stops and why."
+                }
+              },
+              {
+                "title": {
+                  "he": "מעקב אחר שירותים",
+                  "en": "Service watch"
+                },
+                "text": {
+                  "he": "בוחרים שירותים חשובים ורואים מיד אם אחד מהם לא פועל.",
+                  "en": "Pick the services that matter and see at once if one is not running."
+                }
+              }
+            ]
+          },
+          {
+            "code": "ALR",
+            "name": {
+              "he": "התראות ותצוגה",
+              "en": "Alerts and views"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "מייל וטלגרם",
+                  "en": "Email and Telegram"
+                },
+                "text": {
+                  "he": "התראה על בעיה חדשה ועל פתרונה, כולל סיכום יומי.",
+                  "en": "An alert for a new problem and for its resolution, plus a daily summary."
+                }
+              },
+              {
+                "title": {
+                  "he": "בלי הצפה",
+                  "en": "No flapping"
+                },
+                "text": {
+                  "he": "דיסק שמרחף על הסף פותח התראה אחת ולא פותח וסוגר אותה כל שעה.",
+                  "en": "A disk hovering on its limit opens one alert instead of opening and closing it every hour."
+                }
+              },
+              {
+                "title": {
+                  "he": "דשבורד שמסדרים לבד",
+                  "en": "A dashboard you arrange"
+                },
+                "text": {
+                  "he": "גרפים, עמודות ועוגה, תקופות מהשעה האחרונה ועד 90 יום, וגרירה חופשית של החלונות.",
+                  "en": "Graphs, bars and pie charts, periods from the last hour to 90 days, and freely draggable widgets."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": {
+          "he": "כך זה עובד",
+          "en": "How it works"
+        },
+        "title": {
+          "he": "מההתקנה ועד ההתראה הראשונה",
+          "en": "From install to the first alert"
+        },
+        "items": [
+          {
+            "title": {
+              "he": "מתקינים",
+              "en": "Install"
+            },
+            "text": {
+              "he": "קובץ התקנה אחד, בלי אינטרנט, על שרת Ubuntu.",
+              "en": "One installer file, no internet needed, on an Ubuntu server."
+            }
+          },
+          {
+            "title": {
+              "he": "מחברים מקורות",
+              "en": "Connect sources"
+            },
+            "text": {
+              "he": "מזינים את vCenter, Hyper-V או Active Directory, והמערכת מגלה מכונות.",
+              "en": "Enter vCenter, Hyper-V or Active Directory, and the system discovers machines."
+            }
+          },
+          {
+            "title": {
+              "he": "בוחרים מה לנטר",
+              "en": "Choose what to monitor"
+            },
+            "text": {
+              "he": "מסמנים מכונות לניטור ונותנים להן פרטי גישה.",
+              "en": "Mark machines to monitor and give them access credentials."
+            }
+          },
+          {
+            "title": {
+              "he": "מקבלים התראות",
+              "en": "Get alerts"
+            },
+            "text": {
+              "he": "ההתראות מגיעות במייל או בטלגרם, והדשבורד מציג את המצב.",
+              "en": "Alerts arrive by email or Telegram, and the dashboard shows the state."
+            }
+          }
+        ]
+      },
+      "stats": {
+        "eyebrow": {
+          "he": "במספרים",
+          "en": "In numbers"
+        },
+        "title": {
+          "he": "מה אפשר לבדוק",
+          "en": "What you can check"
+        },
+        "items": [
+          {
+            "value": "0",
+            "label": {
+              "he": "סוכנים להתקין על המכונות",
+              "en": "agents to install on the machines"
+            }
+          },
+          {
+            "value": "2",
+            "label": {
+              "he": "ערוצי התראה: מייל וטלגרם",
+              "en": "alert channels: email and Telegram"
+            }
+          },
+          {
+            "value": "90",
+            "label": {
+              "he": "ימי היסטוריית התראות",
+              "en": "days of alert history"
+            }
+          }
+        ]
+      },
+      "audience": {
+        "he": "מתאימה לצוותי IT בארגונים שיש להם VMware, Hyper-V ו-Active Directory, ורוצים ניטור בלי להתקין סוכנים. היא לא מתאימה למי שמחפש שירות ענן מנוהל.",
+        "en": "It suits IT teams in organizations running VMware, Hyper-V and Active Directory who want monitoring without installing agents. It is not for anyone looking for a managed cloud service."
+      },
+      "requirements": [
+        {
+          "he": "שרת Ubuntu 24.04 או 26.04",
+          "en": "An Ubuntu 24.04 or 26.04 server"
+        },
+        {
+          "he": "גישת רשת מהשרת למכונות המנוטרות",
+          "en": "Network access from the server to the monitored machines"
+        },
+        {
+          "he": "WinRM למכונות Windows או SSH למכונות Linux",
+          "en": "WinRM for Windows machines or SSH for Linux machines"
+        },
+        {
+          "he": "חשבון עם הרשאות קריאה בכל מקור גילוי",
+          "en": "An account with read permissions on each discovery source"
+        }
+      ],
+      "faq": [
+        {
+          "q": {
+            "he": "איפה הנתונים נשמרים?",
+            "en": "Where is the data kept?"
+          },
+          "a": {
+            "he": "רק על השרת שלך. המערכת לא שולחת נתונים החוצה, חוץ מהתראות לערוצים שהגדרת.",
+            "en": "Only on your server. The system sends nothing out, except alerts to the channels you set up."
+          }
+        },
+        {
+          "q": {
+            "he": "צריך להתקין משהו על המכונות המנוטרות?",
+            "en": "Do I need to install anything on the monitored machines?"
+          },
+          "a": {
+            "he": "לא. המערכת מתחברת אליהן דרך WinRM או SSH.",
+            "en": "No. The system connects to them over WinRM or SSH."
+          }
+        },
+        {
+          "q": {
+            "he": "היא עובדת בלי אינטרנט?",
+            "en": "Does it work without internet?"
+          },
+          "a": {
+            "he": "כן. ההתקנה מתבצעת מקובץ אחד, והמערכת רצה בתוך הרשת. רק ההתראות במייל ובטלגרם דורשות יעד שאליו אפשר להגיע.",
+            "en": "Yes. Installation runs from one file and the system runs inside your network. Only email and Telegram alerts need a destination that can be reached."
+          }
+        },
+        {
+          "q": {
+            "he": "מה קורה כשאי אפשר להתחבר למכונה?",
+            "en": "What happens when a machine cannot be reached?"
+          },
+          "a": {
+            "he": "נפתחת התראה שאי אפשר לאסוף נתונים, ובדף המכונה בדיקת חיבור מראה איפה זה נעצר.",
+            "en": "An alert says data cannot be collected, and the connection test on the machine's page shows where it stops."
+          }
+        }
+      ],
+      "changelog": [
+        {
+          "version": "0.2.0",
+          "date": {
+            "he": "אוקטובר 2026",
+            "en": "October 2026"
+          },
+          "text": {
+            "he": "דשבורד שאפשר לסדר בגרירה חופשית, עם חלונות זה לצד זה. היסטוריית התראות, תקופות לגרפים והתראות על זיכרון ו-CPU.",
+            "en": "A dashboard you arrange by dragging, with widgets side by side. Alert history, periods for graphs, and memory and CPU alerts."
+          }
+        },
+        {
+          "version": "0.1.0",
+          "date": {
+            "he": "ספטמבר 2026",
+            "en": "September 2026"
+          },
+          "text": {
+            "he": "הגרסה הראשונה: גילוי מכונות, ניטור בלי סוכנים, התראות במייל ובטלגרם, ודשבורד.",
+            "en": "The first version: machine discovery, agentless monitoring, email and Telegram alerts, and a dashboard."
+          }
+        }
+      ],
+      "screenshots": []
+    }
   }
 ]
