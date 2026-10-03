@@ -1,18 +1,20 @@
 [
   {
-    "id": "example-app",
-    "example": true,
-    "name": { "he": "מוצר לדוגמה", "en": "Example product" },
-    "tagline": { "he": "שורה אחת שמסבירה מה הכלי עושה", "en": "One line that says what the tool does" },
-    "description": {
-      "he": "כרטיס זמני. הדבק את פרומפט הקטלוג בכל פרויקט, והוסף לכאן את רשומת ה-JSON שהוא מחזיר.",
-      "en": "Placeholder card. Paste the catalog prompt into each project and add the JSON entry it returns here."
+    "id": "tk-comms-sentinel",
+    "name": { "he": "TK Comms Sentinel", "en": "TK Comms Sentinel" },
+    "tagline": {
+      "he": "מנטר את כל הסוויצ'ים ברשת ושולח התראה לפני שמישהו מתלונן",
+      "en": "Monitors every switch on your network and alerts you before users complain"
     },
-    "category": "tool",
-    "status": "beta",
-    "tags": ["Claude", "Automation"],
+    "description": {
+      "he": "מי שמנהל רשת עם עשרות סוויצ'ים בדרך כלל מגלה על תקלה מהטלפון. המערכת בודקת כל מכשיר בקביעות דרך SNMP ומראה בלוח בקרה אחד מי נפל ומתי, עומס, CPU, טמפרטורה, זמינות, ובאיזה פורט מחובר כל מחשב. ההתראות מגיעות במייל ובטלגרם, אפשר לבחור מה יעלה לאן, והכול מותקן בקובץ התקנה אחד על שרת Windows ומתעדכן לבד.",
+      "en": "If you run a network with dozens of switches, you usually hear about an outage from a phone call. This checks every device over SNMP and puts it on one dashboard: who went down and when, load, CPU, temperature, uptime, and which port each computer is plugged into. Alerts go out by email and Telegram, you choose what goes where, and it installs from a single file on a Windows server and updates itself."
+    },
+    "category": "app",
+    "status": "live",
+    "tags": ["SNMP", "Node.js", "React", "Windows Server"],
     "image": "",
-    "url": "",
-    "repo": ""
+    "url": "https://tulik2323.github.io/tk-comms-sentinel/",
+    "repo": "https://github.com/Tulik2323/tk-comms-sentinel"
   }
 ]
