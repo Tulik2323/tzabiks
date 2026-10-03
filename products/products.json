@@ -681,12 +681,12 @@
         "en": "Server and VM monitoring"
       },
       "headline": {
-        "he": "הצוות כבר יודע מה עומד ליפול, לפני שהמשתמשים מדווחים.",
-        "en": "Your team already knows what is about to fail, before users report it."
+        "he": "דיסק שמתמלא או שירות שנעצר מגיעים אליך לפני שמישהו מתקשר.",
+        "en": "A filling disk or a stopped service reaches you before anyone calls."
       },
       "emphasis": {
-        "he": "לפני שהמשתמשים מדווחים",
-        "en": "before users report it"
+        "he": "לפני שמישהו מתקשר",
+        "en": "before anyone calls"
       },
       "lede": {
         "he": "TZABIKS מתחברת לסביבה שלך, מגלה את המכונות ובודקת אותן בלי סוכנים. מה שדורש תשומת לב מופיע במסך אחד ומגיע אליך כהתראה. היא נשארת בתוך הארגון ועובדת גם בלי אינטרנט.",
