@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TULIK</title>
+<meta name="description" content="TULIK: אפליקציות וכלים דיגיטליים שבניתי.">
+<link rel="icon" type="image/png" href="assets/tk-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Orbitron:wght@700;900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="TULIK">
+    <img src="assets/tk-logo.png" alt="" width="36" height="36">
+    <span>TULIK</span>
+  </a>
+  <nav class="nav">
+    <a href="#products" data-i18n="nav.products">מוצרים</a>
+    <a href="#about" data-i18n="nav.about">אודות</a>
+    <a href="#contact" data-i18n="nav.contact">צור קשר</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Switch language">EN</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">אפליקציות · כלים · אוטומציה</p>
+      <h1 data-i18n="hero.title">כלים חכמים שבניתי, במקום אחד</h1>
+      <p class="lead" data-i18n="hero.lead">כאן תמצאו את האפליקציות והכלים שאני מפתח: מה כל אחד עושה, איפה הוא עומד, ואיך מתחילים להשתמש בו.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#products" data-i18n="hero.cta">לכל המוצרים</a>
+        <a class="btn ghost" href="#contact" data-i18n="hero.cta2">דברו איתי</a>
+      </div>
+    </div>
+    <div class="cube-wrap">
+      <div class="stage" id="stage" role="img" aria-label="TK logo">
+        <div class="cube" id="cube">
+          <div class="face f-front"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+          <div class="face f-back"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+          <div class="face f-right"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+          <div class="face f-left"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+          <div class="face f-top"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+          <div class="face f-bottom"><img src="assets/tk-logo.png" alt="" draggable="false"></div>
+        </div>
+      </div>
+      <div class="cube-glow" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="section-head">
+      <h2 data-i18n="products.title">המוצרים</h2>
+      <div class="filters" id="filters" role="tablist"></div>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2 data-i18n="about.title">אודות</h2>
+    <p data-i18n="about.body">אני טוליק. אני בונה כלים שחוסכים זמן ופותרים בעיות אמיתיות, בעיקר עם בינה מלאכותית ואוטומציה. כל מוצר כאן התחיל מצורך שלי או של מישהו שאני מכיר.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 data-i18n="contact.title">צור קשר</h2>
+    <p class="muted" data-i18n="contact.lead">רוצים להשתמש באחד הכלים, או שיש לכם רעיון לכלי חדש? כתבו לי.</p>
+    <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Company <input name="company" id="f-company" tabindex="-1" autocomplete="off"></label></p>
+      <label for="f-name" data-i18n="contact.name">שם</label>
+      <input id="f-name" name="name" required autocomplete="name">
+      <label for="f-email" data-i18n="contact.email">אימייל</label>
+      <input id="f-email" name="email" type="email" required autocomplete="email" dir="ltr">
+      <label for="f-product" data-i18n="contact.product">על איזה מוצר? (לא חובה)</label>
+      <select id="f-product" name="product"><option value="" data-i18n="contact.general">פנייה כללית</option></select>
+      <label for="f-msg" data-i18n="contact.message">הודעה</label>
+      <textarea id="f-msg" name="message" rows="5" required></textarea>
+      <button class="btn primary" type="submit" data-i18n="contact.send">שליחה</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> TULIK</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "example-app",
+    "example": true,
+    "name": { "he": "מוצר לדוגמה", "en": "Example product" },
+    "tagline": { "he": "שורה אחת שמסבירה מה הכלי עושה", "en": "One line that says what the tool does" },
+    "description": {
+      "he": "כרטיס זמני. הדבק את פרומפט הקטלוג בכל פרויקט, והוסף לכאן את רשומת ה-JSON שהוא מחזיר.",
+      "en": "Placeholder card. Paste the catalog prompt into each project and add the JSON entry it returns here."
+    },
+    "category": "tool",
+    "status": "beta",
+    "tags": ["Claude", "Automation"],
+    "image": "",
+    "url": "",
+    "repo": ""
+  }
+]
