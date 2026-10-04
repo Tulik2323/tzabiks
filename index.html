@@ -68,9 +68,8 @@
   <section class="section" id="contact">
     <h2 data-i18n="contact.title">צור קשר</h2>
     <p class="muted" data-i18n="contact.lead">רוצים להשתמש באחד הכלים, או שיש לכם רעיון לכלי חדש? כתבו לי.</p>
-    <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="hp"><label>Company <input name="company" id="f-company" tabindex="-1" autocomplete="off"></label></p>
+    <form class="form" id="contact-form" name="contact" method="POST">
+      <p class="hp"><label>Company <input name="_honey" id="f-company" tabindex="-1" autocomplete="off"></label></p>
       <label for="f-name" data-i18n="contact.name">שם</label>
       <input id="f-name" name="name" required autocomplete="name">
       <label for="f-email" data-i18n="contact.email">אימייל</label>

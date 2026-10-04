@@ -56,6 +56,8 @@
     }
   };
 
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/tulik23@hotmail.com';
+
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch {} }
@@ -511,12 +513,20 @@
       status.className = 'form-status';
       status.textContent = t('contact.sending');
       try {
-        const res = await fetch('/', {
+        const data = Object.fromEntries(new FormData(form));
+        if (data._honey) { form.reset(); status.textContent = t('contact.ok'); return; }
+        const res = await fetch(FORM_ENDPOINT, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(form)).toString()
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            ...data,
+            _subject: 'TULIK: ' + (data.product ? 'פנייה על ' + data.product : 'פנייה חדשה מהאתר'),
+            _replyto: data.email,
+            _template: 'table'
+          })
         });
-        if (!res.ok) throw new Error(res.status);
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || String(out.success) === 'false') throw new Error(out.message || res.status);
         form.reset();
         status.textContent = t('contact.ok');
       } catch {
