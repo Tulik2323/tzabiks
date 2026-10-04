@@ -1122,5 +1122,468 @@
       ],
       "screenshots": []
     }
+  },
+  {
+    "id": "mailops",
+    "name": {
+      "he": "MailOps",
+      "en": "MailOps"
+    },
+    "tagline": {
+      "he": "מאפשר לטכנאים לשנות תיבות Exchange, באישור מנהל",
+      "en": "Lets technicians change Exchange mailboxes, with admin approval"
+    },
+    "description": {
+      "he": "כל שינוי בתיבת דואר ב-Exchange מקומי דורש היום מישהו עם הרשאות אדמין שיריץ סקריפט PowerShell. MailOps נותן לטכנאי ממשק web שבו הוא נכנס עם חשבון ה-AD שלו, רואה לפני ואחרי ושולח בקשה, ומנהל מאשר. השינוי עצמו מתבצע דרך חשבון שירות שהטכנאי לעולם לא רואה, וכל פעולה נרשמת על שמו.",
+      "en": "Every mailbox change on an on-prem Exchange usually means someone with admin rights running a PowerShell script. MailOps gives technicians a web interface: they sign in with their own AD account, see a before and after, and submit a request that an admin approves. The change itself runs through a service account the technician never sees, and every action is logged under their name."
+    },
+    "category": "app",
+    "status": "beta",
+    "tags": [
+      "Exchange",
+      "Active Directory",
+      "ASP.NET Core",
+      "React"
+    ],
+    "image": "",
+    "logo": "",
+    "url": "",
+    "repo": "",
+    "page": {
+      "eyebrow": {
+        "he": "ניהול תיבות Exchange מקומי",
+        "en": "On-prem Exchange mailbox management"
+      },
+      "headline": {
+        "he": "שינויי תיבות Exchange בלי PowerShell, ובלי לתת לאף אחד הרשאות אדמין.",
+        "en": "Change Exchange mailboxes without PowerShell, or handing out admin rights."
+      },
+      "emphasis": {
+        "he": "בלי PowerShell",
+        "en": "without PowerShell"
+      },
+      "lede": {
+        "he": "הטכנאי מחפש תיבה, רואה מה הערך הנוכחי, מבקש שינוי, ומנהל מאשר. רק אז Exchange נוגע בתיבה. כל שלב נשמר ביומן ביקורת עם שם הטכנאי האמיתי, לא עם שם של חשבון משותף.",
+        "en": "The technician finds a mailbox, sees the current values, requests a change, and an admin approves it. Only then does Exchange touch the mailbox. Every step is kept in an audit log under the technician's real name, not a shared account."
+      },
+      "microcopy": {
+        "he": "WINDOWS SERVER · EXCHANGE 2019 ON-PREM · WORKS FULLY OFFLINE",
+        "en": "WINDOWS SERVER · EXCHANGE 2019 ON-PREM · WORKS FULLY OFFLINE"
+      },
+      "preview": {
+        "label": "APPROVAL QUEUE",
+        "meta": "TODAY",
+        "rows": [
+          {
+            "state": "warn",
+            "name": {
+              "he": "מכסת תיבה · ד\"ר שלום לוי",
+              "en": "Mailbox quota · Dr. Shalom Levi"
+            },
+            "meta": {
+              "he": "ממתין לאישור · 20GB",
+              "en": "Pending · 20GB"
+            },
+            "spark": []
+          },
+          {
+            "state": "ok",
+            "name": {
+              "he": "הרשאת לוח שנה · מזכירות מנהל",
+              "en": "Calendar access · executive office"
+            },
+            "meta": {
+              "he": "אושר · עריכה מלאה",
+              "en": "Approved · full edit"
+            },
+            "spark": []
+          },
+          {
+            "state": "ok",
+            "name": {
+              "he": "הגבלת נמענים · מחלקת רישום",
+              "en": "Recipient limit · registration desk"
+            },
+            "meta": {
+              "he": "אושר · 150 נמענים",
+              "en": "Approved · 150 recipients"
+            },
+            "spark": []
+          },
+          {
+            "state": "crit",
+            "name": {
+              "he": "גודל מייל · צוות מחקר",
+              "en": "Message size · research team"
+            },
+            "meta": {
+              "he": "נדחה · מעל התקרה",
+              "en": "Rejected · over the limit"
+            },
+            "spark": []
+          }
+        ],
+        "note": {
+          "he": "להמחשה בלבד. שמות ונתונים בדיוניים.",
+          "en": "Illustrative only. Fictional names and figures."
+        }
+      },
+      "problem": {
+        "eyebrow": {
+          "he": "למה זה קריטי",
+          "en": "Why this matters"
+        },
+        "title": {
+          "he": "כל בקשה קטנה עוברת דרך אדם אחד עם סקריפט",
+          "en": "Every small request waits on one person with a script"
+        },
+        "paragraphs": [
+          {
+            "he": "מזכירה צריכה גישה ליומן של המנהל. מישהו צריך להגדיל מכסה. תיבה נתקעת על מגבלת נמענים. כל אחת מהבקשות האלה מחכה למי שיש לו הרשאות Exchange ויודע להריץ את הפקודה הנכונה.",
+            "en": "A secretary needs access to a manager's calendar. Someone needs a bigger quota. A mailbox hits its recipient limit. Each of these waits for whoever has Exchange rights and knows the right command."
+          },
+          {
+            "he": "הפתרון הקל הוא לתת לעוד אנשים הרשאות אדמין. הפתרון הבטוח הוא לא לתת. MailOps מאפשר לשניהם להיות נכונים.",
+            "en": "The easy fix is to hand out admin rights to more people. The safe fix is not to. MailOps lets both be true."
+          }
+        ],
+        "points": [
+          {
+            "title": {
+              "he": "מזכירה צריכה לנהל יומן של מנהל",
+              "en": "A secretary needs to manage a manager's calendar"
+            },
+            "text": {
+              "he": "הטכנאי בוחר רמת הרשאה (קריאה, יצירה או עריכה), והמערכת מוסיפה גם \"שליחה בשם\" כדי שתשובות לפגישות יגיעו כמו שצריך.",
+              "en": "The technician picks a permission level (read, author or edit), and the tool adds send-on-behalf too, so meeting replies come across properly."
+            }
+          },
+          {
+            "title": {
+              "he": "טעות הקלדה בתיבה לא נכונה",
+              "en": "A typo on the wrong mailbox"
+            },
+            "text": {
+              "he": "לפני כל שליחה רואים לפני ואחרי, יש טווחים קשיחים שחוסמים ערכים מוזרים, תיבות הנהלה אפשר לסמן כמוגנות, וכל שינוי ממתין לאישור.",
+              "en": "Before anything is sent you see a before and after, hard ranges block absurd values, VIP mailboxes can be marked protected, and every change waits for approval."
+            }
+          },
+          {
+            "title": {
+              "he": "\"מי שינה את זה ומתי?\"",
+              "en": "\"Who changed this, and when?\""
+            },
+            "text": {
+              "he": "כל בקשה, אישור ודחייה נרשמים עם שם הטכנאי, שם המאשר והערך הקודם.",
+              "en": "Every request, approval and rejection is recorded with the technician, the approver and the previous value."
+            }
+          }
+        ]
+      },
+      "features": {
+        "eyebrow": {
+          "he": "מה המערכת עושה בפועל",
+          "en": "What it actually does"
+        },
+        "title": {
+          "he": "שלוש קבוצות של יכולות",
+          "en": "Three groups of capabilities"
+        },
+        "intro": {
+          "he": "ממשק בעברית, כניסה עם חשבון AD, וקבוצת AD אחת לטכנאים ואחת למנהלים.",
+          "en": "A Hebrew interface, sign-in with an AD account, and one AD group for technicians and one for admins."
+        },
+        "groups": [
+          {
+            "code": "SAF",
+            "name": {
+              "he": "בטיחות ובקרה",
+              "en": "Safety and control"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "תור אישורים",
+                  "en": "Approval queue"
+                },
+                "text": {
+                  "he": "שום שינוי לא נכתב ל-Exchange לפני שמנהל מאשר. אפשר להגדיר מי מקבל מייל על כל בקשה חדשה.",
+                  "en": "Nothing is written to Exchange before an admin approves it. You choose who gets an email for each new request."
+                }
+              },
+              {
+                "title": {
+                  "he": "תצוגה מקדימה לפני ואחרי",
+                  "en": "Before and after preview"
+                },
+                "text": {
+                  "he": "הטכנאי רואה בדיוק מה ישתנה, וה-Exchange עצמו בודק את הבקשה לפני שהיא נשלחת לאישור.",
+                  "en": "The technician sees exactly what will change, and Exchange itself validates the request before it goes to approval."
+                }
+              },
+              {
+                "title": {
+                  "he": "תיבות מוגנות וחסומות",
+                  "en": "Protected and blocked mailboxes"
+                },
+                "text": {
+                  "he": "אתה מגדיר רשימת תיבות הנהלה שלא ניתנות לשינוי. תיבות מערכת לא נגישות כלל, וגם תיבת חשבון השירות מוגנת תמיד.",
+                  "en": "You define a list of executive mailboxes that can never be changed. System mailboxes are off limits entirely, and the service account's own mailbox is always protected."
+                }
+              },
+              {
+                "title": {
+                  "he": "יומן ביקורת",
+                  "en": "Audit log"
+                },
+                "text": {
+                  "he": "מי ביקש, מי אישר, מה היה הערך הקודם ומה נקבע בפועל, כפי שנקרא מחדש מ-Exchange.",
+                  "en": "Who asked, who approved, the previous value, and what was actually set, re-read from Exchange afterwards."
+                }
+              }
+            ]
+          },
+          {
+            "code": "MBX",
+            "name": {
+              "he": "הגדרות תיבה",
+              "en": "Mailbox settings"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "הגבלת מספר נמענים",
+                  "en": "Recipient limit"
+                },
+                "text": {
+                  "he": "מקבלים את הערך הנוכחי ומגדירים חדש בתוך טווח מותר.",
+                  "en": "See the current value and set a new one within an allowed range."
+                }
+              },
+              {
+                "title": {
+                  "he": "מכסת תיבה",
+                  "en": "Mailbox quota"
+                },
+                "text": {
+                  "he": "שלושת הספים (אזהרה, חסימת שליחה, חסימת שליחה וקבלה) נבדקים יחד, והמערכת מוודאת שמכסות ברירת המחדל של מסד הנתונים לא דורסות את הערך שנקבע.",
+                  "en": "The three thresholds (warning, send block, send and receive block) are checked together, and the tool makes sure the database defaults don't silently override what you set."
+                }
+              },
+              {
+                "title": {
+                  "he": "גודל מייל מקסימלי",
+                  "en": "Maximum message size"
+                },
+                "text": {
+                  "he": "קובעים גודל לשליחה ולקבלה, ומקבלים אזהרה כשהערך גבוה ממה שהארגון באמת מעביר.",
+                  "en": "Set a size for sending and receiving, and get a warning when it's higher than what the organization actually delivers."
+                }
+              }
+            ]
+          },
+          {
+            "code": "DLG",
+            "name": {
+              "he": "הרשאות ונציגים",
+              "en": "Permissions and delegates"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "הרשאת ניהול ללוח שנה",
+                  "en": "Calendar delegation"
+                },
+                "text": {
+                  "he": "רואים מי כבר מורשה ללוח השנה, מוסיפים או מסירים הרשאה בלחיצה, יחד עם \"שליחה בשם\".",
+                  "en": "See who already has access to the calendar, then add or remove access in a click, together with send-on-behalf."
+                }
+              },
+              {
+                "title": {
+                  "he": "גישה מלאה ו-Send As",
+                  "en": "Full access and Send As"
+                },
+                "text": {
+                  "he": "מעניקים או מסירים גישה לכל התיבה או שליחה בשמה, עם רשימת המורשים הנוכחיים וכפתור הסרה.",
+                  "en": "Grant or remove access to the whole mailbox or sending as it, with the current list and a remove button."
+                }
+              },
+              {
+                "title": {
+                  "he": "חדרים וציוד",
+                  "en": "Rooms and equipment"
+                },
+                "text": {
+                  "he": "בתיבות משאב מנהלים מי מאשר הזמנות חריגות, ואת כללי ההזמנה: אישור אוטומטי, חלון הזמנה, משך מקסימלי, פגישות חוזרות ושעות עבודה.",
+                  "en": "On resource mailboxes you manage who approves out-of-policy bookings, and the booking rules: auto-accept, booking window, maximum duration, recurring meetings and working hours."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": {
+          "he": "כך זה עובד",
+          "en": "How it works"
+        },
+        "title": {
+          "he": "מהכניסה ועד השינוי בתיבה",
+          "en": "From sign-in to the change"
+        },
+        "items": [
+          {
+            "title": {
+              "he": "כניסה עם AD",
+              "en": "Sign in with AD"
+            },
+            "text": {
+              "he": "הטכנאי נכנס עם חשבון ה-AD שלו. רק חברי קבוצות שהגדרת נכנסים.",
+              "en": "The technician signs in with their own AD account. Only members of the groups you chose get in."
+            }
+          },
+          {
+            "title": {
+              "he": "בחירת תיבה",
+              "en": "Pick a mailbox"
+            },
+            "text": {
+              "he": "מחפשים לפי שם או כתובת, ורואים את הערכים הנוכחיים של התיבה.",
+              "en": "Search by name or address and see the mailbox's current values."
+            }
+          },
+          {
+            "title": {
+              "he": "תצוגה מקדימה ובקשה",
+              "en": "Preview and request"
+            },
+            "text": {
+              "he": "רואים לפני ואחרי, ושולחים את הבקשה לתור האישורים.",
+              "en": "See the before and after, then send the request to the approval queue."
+            }
+          },
+          {
+            "title": {
+              "he": "אישור וביצוע",
+              "en": "Approve and apply"
+            },
+            "text": {
+              "he": "מנהל מאשר או דוחה. באישור, השינוי מתבצע דרך חשבון השירות והתוצאה נקראת מחדש לוודא שהיא נקלטה.",
+              "en": "An admin approves or rejects. On approval, the change runs through the service account and the result is re-read to confirm it took."
+            }
+          }
+        ]
+      },
+      "stats": {
+        "eyebrow": {
+          "he": "במספרים",
+          "en": "In numbers"
+        },
+        "title": {
+          "he": "מה אפשר לבדוק",
+          "en": "What you can verify"
+        },
+        "items": [
+          {
+            "value": "8",
+            "label": {
+              "he": "סוגי פעולות על תיבות",
+              "en": "types of mailbox operations"
+            }
+          },
+          {
+            "value": "100%",
+            "label": {
+              "he": "מהשינויים עוברים אישור מנהל",
+              "en": "of changes go through admin approval"
+            }
+          },
+          {
+            "value": "0",
+            "label": {
+              "he": "תלויות באינטרנט בזמן ריצה",
+              "en": "internet dependencies at runtime"
+            }
+          }
+        ]
+      },
+      "audience": {
+        "he": "מתאים לצוותי IT בארגון עם Exchange מקומי, שבו הרבה אנשים מבקשים שינויים בתיבות ומעט אנשים מורשים לבצע אותם. לא מיועד ל-Exchange Online, והוא לא כלי לפעולות המוניות על הרבה תיבות בבת אחת.",
+        "en": "Fits IT teams in organizations with an on-prem Exchange, where many people ask for mailbox changes and few are allowed to make them. It is not built for Exchange Online, and it is not a tool for bulk operations across many mailboxes at once."
+      },
+      "requirements": [
+        {
+          "he": "Exchange 2019 מקומי, עם גישת PowerShell מרחוק (WinRM) מהשרת שמארח את המערכת",
+          "en": "On-prem Exchange 2019, with remote PowerShell (WinRM) reachable from the host server"
+        },
+        {
+          "he": "Active Directory עם LDAPS, ושתי קבוצות אבטחה: אחת לטכנאים ואחת למנהלים",
+          "en": "Active Directory with LDAPS, and two security groups: one for technicians and one for admins"
+        },
+        {
+          "he": "חשבון שירות עם תפקיד Recipient Management ב-Exchange",
+          "en": "A service account with the Recipient Management role in Exchange"
+        },
+        {
+          "he": "שרת Windows עם IIS, ASP.NET Core Hosting Bundle ותעודת HTTPS",
+          "en": "A Windows server with IIS, the ASP.NET Core Hosting Bundle and an HTTPS certificate"
+        }
+      ],
+      "faq": [
+        {
+          "q": {
+            "he": "מה קורה לסיסמה שלי כשאני נכנס?",
+            "en": "What happens to my password when I sign in?"
+          },
+          "a": {
+            "he": "היא נשלחת רק לבקר הדומיין, בחיבור LDAPS מוצפן. היא לא נשמרת בשום מקום ולא נכתבת ליומן.",
+            "en": "It goes only to the domain controller, over an encrypted LDAPS connection. It is not stored anywhere or written to the log."
+          }
+        },
+        {
+          "q": {
+            "he": "איפה נשמרת סיסמת חשבון השירות?",
+            "en": "Where is the service account password kept?"
+          },
+          "a": {
+            "he": "מוצפנת בשרת באמצעות DPAPI, יחד עם קובץ מפתח נפרד. אין בשום מקום במערכת פעולה שמחזירה אותה, גם לא למנהל.",
+            "en": "Encrypted on the server with DPAPI, alongside a separate key file. Nothing in the system returns it, not even to an admin."
+          }
+        },
+        {
+          "q": {
+            "he": "מה קורה אם Exchange לא זמין?",
+            "en": "What happens if Exchange is unavailable?"
+          },
+          "a": {
+            "he": "המערכת ממשיכה לעלות ומציגה את מצב החיבור בראש המסך. הפעולות נחסמות עד שהחיבור חוזר, ולא נתקעות בתור בשקט.",
+            "en": "The app keeps running and shows the connection state at the top of the screen. Actions are blocked until the connection returns, rather than silently piling up."
+          }
+        },
+        {
+          "q": {
+            "he": "אפשר לשנות תיבות מערכת או תיבות הנהלה?",
+            "en": "Can it change system or executive mailboxes?"
+          },
+          "a": {
+            "he": "תיבות מערכת חסומות בקוד. תיבות הנהלה אתה מסמן כמוגנות, ומאותו רגע אי אפשר לבקש עליהן שינוי.",
+            "en": "System mailboxes are blocked in code. You mark executive mailboxes as protected, and from then on no change can be requested on them."
+          }
+        },
+        {
+          "q": {
+            "he": "המערכת צריכה אינטרנט?",
+            "en": "Does it need internet access?"
+          },
+          "a": {
+            "he": "לא. היא מדברת רק עם בקר הדומיין ועם שרת ה-Exchange, ושניהם פנימיים.",
+            "en": "No. It only talks to the domain controller and the Exchange server, both internal."
+          }
+        }
+      ],
+      "changelog": [],
+      "screenshots": []
+    }
   }
 ]
