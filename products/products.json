@@ -1585,5 +1585,373 @@
       "changelog": [],
       "screenshots": []
     }
+  },
+  {
+    "id": "vm-builder",
+    "name": {
+      "he": "TK VMBuilder",
+      "en": "TK VMBuilder"
+    },
+    "tagline": {
+      "he": "הופך בקשות לשרתים למכונות ב-vCenter תוך דקות",
+      "en": "Turn server requests into vCenter VMs in minutes"
+    },
+    "description": {
+      "he": "מערכת פנימית לניהול בקשות למכונות וירטואליות. המשתמש שולח בקשה, המאשר מקבל מייל ומשלים את הפרטים הטכניים, והמערכת יוצרת את המכונה ב-vCenter אוטומטית, עם יומן מלא של כל שלב.",
+      "en": "An internal portal for VM provisioning requests. Users submit a request, the approver gets an email and fills in the technical details, and the system creates the VM in vCenter automatically, with a full audit trail."
+    },
+    "category": "app",
+    "status": "live",
+    "tags": [
+      "vCenter",
+      "PowerCLI",
+      "Windows Server",
+      "Active Directory"
+    ],
+    "image": "",
+    "logo": "",
+    "url": "",
+    "repo": "",
+    "page": {
+      "eyebrow": {
+        "he": "מערכת להקמת מכונות וירטואליות",
+        "en": "Virtual machine provisioning platform"
+      },
+      "headline": {
+        "he": "בקשות לשרתים הופכות למכונות ב-vCenter, אוטומטית.",
+        "en": "Server requests become vCenter VMs, automatically."
+      },
+      "emphasis": {
+        "he": "אוטומטית",
+        "en": "automatically"
+      },
+      "lede": {
+        "he": "מערכת סגורה לבקשות מכונות וירטואליות ב-vCenter. המשתמש ממלא טופס קצר, המאשר מקבל מייל עם קישור מאובטח ומשלים את שם המכונה והפרטים הטכניים במסך אחד, והמערכת מתחברת ל-vCenter ויוצרת את המכונה.",
+        "en": "A closed-loop VM request system for vCenter. Users fill in a short form, the approver gets an email with a secure link and completes the machine name and technical details on one screen, and the system connects to vCenter and creates the VM."
+      },
+      "microcopy": {
+        "he": "WINDOWS SERVER · POWERCLI · ZERO CLOUD DEPENDENCIES",
+        "en": "WINDOWS SERVER · POWERCLI · ZERO CLOUD DEPENDENCIES"
+      },
+      "preview": {
+        "label": "REQUESTS DASHBOARD · LIVE",
+        "meta": "TODAY",
+        "rows": [
+          {
+            "state": "ok",
+            "name": "web-server-01",
+            "meta": {
+              "he": "הוקמה",
+              "en": "Provisioned"
+            },
+            "spark": []
+          },
+          {
+            "state": "warn",
+            "name": "db-primary-02",
+            "meta": {
+              "he": "ממתינה לאישור",
+              "en": "Pending approval"
+            },
+            "spark": []
+          },
+          {
+            "state": "crit",
+            "name": "backup-vault-01",
+            "meta": {
+              "he": "נכשלה",
+              "en": "Failed"
+            },
+            "spark": []
+          },
+          {
+            "state": "warn",
+            "name": "test-app-03",
+            "meta": {
+              "he": "בהקמה",
+              "en": "Provisioning"
+            },
+            "spark": []
+          }
+        ],
+        "note": {
+          "he": "להמחשה בלבד. שמות ונתונים בדיוניים.",
+          "en": "Illustrative only. Fictional names and figures."
+        }
+      },
+      "problem": {
+        "eyebrow": {
+          "he": "למה זה קריטי",
+          "en": "Why this matters"
+        },
+        "title": {
+          "he": "בקשות לשרתים שמטופלות ידנית לוקחות שעות ונוטות לטעויות",
+          "en": "Manual server requests take hours and go wrong"
+        },
+        "paragraphs": [
+          {
+            "he": "כשמשתמש צריך שרת חדש, הוא שולח מייל למנהל. המנהל יוצר את המכונה ידנית ב-vCenter, בוחר שם, Cluster, רשת ומשאבים, ושולח תשובה אחרי שעות או ימים. בדרך נופלות טעויות, כמו שם שגוי, VLAN לא נכון או משאבים לא מתאימים, ואין תיעוד של מי עשה מה.",
+            "en": "When users need a server, they email the admin. The admin creates it manually in vCenter, picking name, cluster, network and resources, then emails back hours or days later. Mistakes happen along the way (wrong name, bad VLAN, wrong resources), and there's no record of who did what."
+          }
+        ],
+        "points": [
+          {
+            "title": {
+              "he": "יצירה ידנית",
+              "en": "Manual creation"
+            },
+            "text": {
+              "he": "המנהל יוצר כל מכונה ב-vCenter בעצמו, וטעויות כמו תיקייה שגויה, רשת חסרה או שגיאת הקלדה בשם עוברות בלי שאיש ישים לב.",
+              "en": "The admin creates each VM in vCenter by hand. Mistakes slip through: wrong folder, missing network, typos in names."
+            }
+          },
+          {
+            "title": {
+              "he": "אישור שקשה לעקוב אחריו",
+              "en": "Hard-to-track approval"
+            },
+            "text": {
+              "he": "מיילים הולכים לאיבוד, לא ברור אם בקשה אושרה, ואין תיעוד של מי אישר ומתי.",
+              "en": "Emails get lost, it's unclear if a request was approved, and there's no audit trail of who said yes."
+            }
+          },
+          {
+            "title": {
+              "he": "חוסר שקיפות",
+              "en": "No visibility"
+            },
+            "text": {
+              "he": "אין דרך לדעת איפה עומדת הבקשה, כמה מכונות כבר הוקמו, ומי אישר מה.",
+              "en": "No way to track where a request is, how many VMs have been built, or who approved what."
+            }
+          }
+        ]
+      },
+      "features": {
+        "eyebrow": {
+          "he": "מה המערכת עושה בפועל",
+          "en": "What it actually does"
+        },
+        "title": {
+          "he": "בקשה, אישור, הקמה",
+          "en": "Request, approve, build"
+        },
+        "intro": {
+          "he": "כל מה שצריך, ולא יותר.",
+          "en": "Everything you need, nothing you don't."
+        },
+        "groups": [
+          {
+            "code": "REQ",
+            "name": {
+              "he": "בקשה ואישור",
+              "en": "Request and approval"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "טופס פשוט",
+                  "en": "Simple form"
+                },
+                "text": {
+                  "he": "המשתמש בוחר מערכת הפעלה מהקטלוג (Windows או Linux), מספר vCPU, זיכרון, גודל דיסק, כמות ומטרה.",
+                  "en": "The user picks an OS from the catalog (Windows or Linux), vCPU, RAM, disk size, quantity and purpose."
+                }
+              },
+              {
+                "title": {
+                  "he": "אישור במסך אחד",
+                  "en": "Approval on one screen"
+                },
+                "text": {
+                  "he": "המאשר מקבל מייל עם קישור מאובטח, ובמסך אחד משלים את שם המכונה, ה-Cluster, ה-Datastore והרשת.",
+                  "en": "The approver gets an email with a secure link and fills in machine name, cluster, datastore and network on one screen."
+                }
+              }
+            ]
+          },
+          {
+            "code": "BLD",
+            "name": {
+              "he": "הקמה אוטומטית",
+              "en": "Auto-provisioning"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "יצירה ב-vCenter",
+                  "en": "vCenter creation"
+                },
+                "text": {
+                  "he": "המערכת מתחברת ל-vCenter בעצמה, יוצרת את המכונה מה-Template או מה-ISO שנבחר, מחברת אותה לרשת הנכונה, קובעת משאבים ומדליקה אותה.",
+                  "en": "The system connects to vCenter, creates the VM from the chosen template or ISO, attaches the right network, sets CPU, RAM and disk, and powers it on."
+                }
+              },
+              {
+                "title": {
+                  "he": "תיקייה אוטומטית",
+                  "en": "Auto-folder"
+                },
+                "text": {
+                  "he": "כל מכונה נוצרת בתיקייה משלה, על שם המכונה, תחת התיקייה שהמאשר בחר.",
+                  "en": "Each VM lands in its own folder, named after the machine, under the approver's chosen parent folder."
+                }
+              }
+            ]
+          },
+          {
+            "code": "AUD",
+            "name": {
+              "he": "מעקב והיסטוריה",
+              "en": "Tracking and history"
+            },
+            "items": [
+              {
+                "title": {
+                  "he": "יומן מלא",
+                  "en": "Full audit log"
+                },
+                "text": {
+                  "he": "כל בקשה, כל שינוי וכל ניסיון הקמה נרשמים עם תאריך, שעה ומי ביצע אותם.",
+                  "en": "Every request, change and build attempt is logged with a timestamp and the person who did it."
+                }
+              },
+              {
+                "title": {
+                  "he": "עריכה אחרי אישור",
+                  "en": "Edit after approval"
+                },
+                "text": {
+                  "he": "אם המאשר טעה ב-Cluster או ב-Datastore, הוא יכול לערוך את הבקשה עד שההקמה מתחילה, בלי לפתוח בקשה חדשה.",
+                  "en": "If the approver picked the wrong cluster or datastore, they can edit before the build starts. No need to file a new request."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": {
+          "he": "כך זה עובד",
+          "en": "How it works"
+        },
+        "title": {
+          "he": "מבקשה ועד שרת פועל",
+          "en": "From request to a running server"
+        },
+        "items": [
+          {
+            "title": {
+              "he": "בקשה",
+              "en": "Request"
+            },
+            "text": {
+              "he": "המשתמש נכנס, לוחץ 'בקשה חדשה', ממלא טופס קצר (מערכת הפעלה, מעבד, זיכרון, דיסק, כמות ומטרה) ושולח.",
+              "en": "The user signs in, clicks 'New Request', fills a short form (OS, CPU, RAM, disk, quantity, purpose) and submits."
+            }
+          },
+          {
+            "title": {
+              "he": "אישור",
+              "en": "Approval"
+            },
+            "text": {
+              "he": "המאשר מקבל מייל עם קישור, נכנס, בוחר שם מכונה, Cluster, Datastore ורשת, ולוחץ 'הקם'. התהליך מתחיל מיד.",
+              "en": "The approver gets an email with a secure link, signs in, picks machine name, cluster, datastore and network, and clicks 'Build'. The process starts immediately."
+            }
+          },
+          {
+            "title": {
+              "he": "הקמה",
+              "en": "Build"
+            },
+            "text": {
+              "he": "המערכת יוצרת את המכונה ב-vCenter תוך דקה-שתיים, מקבלת את כתובת ה-IP ושולחת אותה למבקש. הבקשה הושלמה.",
+              "en": "The system creates the VM in vCenter in 1–2 minutes, retrieves the IP and sends it to the requester. Request complete."
+            }
+          }
+        ]
+      },
+      "audience": {
+        "he": "מתאימה לצוותי IT שמנהלים vCenter ומקבלים בקשות למכונות מעובדים. היא לא מתאימה לסביבות Hyper-V בלבד או לענן (AWS או Azure), כי היא עובדת רק עם VMware vCenter.",
+        "en": "For IT teams managing vCenter and fielding VM requests from users. It won't work if you're Hyper-V-only or cloud-only (AWS or Azure), because it works with VMware vCenter only."
+      },
+      "requirements": [
+        {
+          "he": "Windows Server עם IIS",
+          "en": "Windows Server with IIS"
+        },
+        {
+          "he": "vCenter 6.7 ומעלה",
+          "en": "vCenter 6.7 or later"
+        },
+        {
+          "he": "PowerCLI מותקן על השרת",
+          "en": "PowerCLI installed on the server"
+        },
+        {
+          "he": "Active Directory או LDAP לאימות",
+          "en": "Active Directory or LDAP for authentication"
+        },
+        {
+          "he": "גישת רשת מהשרת ל-vCenter",
+          "en": "Network access from the server to vCenter"
+        }
+      ],
+      "faq": [
+        {
+          "q": {
+            "he": "היא עובדת עם Hyper-V או עם ענן?",
+            "en": "Does it work with Hyper-V or cloud platforms?"
+          },
+          "a": {
+            "he": "לא. היא עובדת רק עם VMware vCenter.",
+            "en": "No. It works with VMware vCenter only."
+          }
+        },
+        {
+          "q": {
+            "he": "מה עם הסיסמאות של המכונות?",
+            "en": "What about VM passwords?"
+          },
+          "a": {
+            "he": "המערכת לא מטפלת בסיסמאות. מנהל ה-AD מגדיר אותן דרך Group Policy או LAPS.",
+            "en": "The system doesn't handle passwords. Your AD admin sets them via Group Policy or LAPS."
+          }
+        },
+        {
+          "q": {
+            "he": "אפשר לערוך בקשה אחרי שאושרה?",
+            "en": "Can a request be edited after it's approved?"
+          },
+          "a": {
+            "he": "כן. המאשר יכול לערוך את הפרטים הטכניים (שם, Cluster, Datastore) עד שההקמה מתחילה.",
+            "en": "Yes. The approver can edit technical details (name, cluster, datastore) until the build starts."
+          }
+        },
+        {
+          "q": {
+            "he": "מה קורה כשהקמה נכשלת?",
+            "en": "What happens if a build fails?"
+          },
+          "a": {
+            "he": "הבקשה נשארת במצב 'נכשלה', והיומן מציג את הסיבה. המאשר יכול לערוך ולנסות שוב בלחיצה אחת.",
+            "en": "The request stays 'Failed' and the log shows why. The approver can edit and retry with one click."
+          }
+        },
+        {
+          "q": {
+            "he": "יש API?",
+            "en": "Is there an API?"
+          },
+          "a": {
+            "he": "לא. העבודה נעשית דרך ממשק ה-web בלבד.",
+            "en": "No. Everything goes through the web interface."
+          }
+        }
+      ],
+      "changelog": [],
+      "screenshots": []
+    }
   }
 ]
